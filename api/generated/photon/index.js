@@ -62,7 +62,7 @@ class Photon {
         const internal = options.__internal || {};
         const engineConfig = internal.engine || {};
         this.engine = new runtime_1.Engine({
-            cwd: engineConfig.cwd || "/Users/notrab/now-photon/api/prisma/",
+            cwd: engineConfig.cwd || "/Users/divyendusingh/Documents/prisma/support/now-photon-bug/api/prisma/",
             debug: debugEngine,
             datamodel,
             prismaPath: engineConfig.binaryPath || undefined

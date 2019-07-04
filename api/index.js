@@ -30,6 +30,7 @@ const photon = new Photon({
   __internal: {
     engine: {
       cwd: path.join(__dirname, '../api/prisma/'),
+      binaryPath: path.join(__dirname, '../api/prisma-mac'),
     },
   },
 })
