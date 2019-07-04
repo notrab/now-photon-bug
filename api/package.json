@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "prisma2 generate"
+  },
+  "dependencies": {
+    "apollo-server-micro": "^2.6.7",
+    "graphql": "^14.4.2"
+  }
+}

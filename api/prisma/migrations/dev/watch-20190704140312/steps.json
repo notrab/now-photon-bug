@@ -1,0 +1,20 @@
+{
+  "version": "0.0.126",
+  "steps": [
+    {
+      "stepType": "CreateField",
+      "model": "User",
+      "name": "email",
+      "type": {
+        "Base": "String"
+      },
+      "arity": "required",
+      "isUnique": true
+    },
+    {
+      "stepType": "DeleteField",
+      "model": "User",
+      "name": "mail"
+    }
+  ]
+}
