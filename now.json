@@ -8,7 +8,8 @@
     },
     {
       "src": "api/index.js",
-      "use": "@now/node"
+      "use": "@now/node",
+      "config": { "maxLambdaSize": "20mb" }
     }
   ],
   "routes": [

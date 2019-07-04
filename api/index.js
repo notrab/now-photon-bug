@@ -1,5 +1,6 @@
+const path = require('path')
 const { ApolloServer, gql } = require('apollo-server-micro')
-const Photon = require('@generated/photon')
+const Photon = require('./generated/photon')
 
 const typeDefs = gql`
   type Query {
@@ -25,7 +26,13 @@ const resolvers = {
   },
 }
 
-const photon = new Photon.default()
+const photon = new Photon({
+  __internal: {
+    engine: {
+      cwd: path.join(__dirname, '../prisma/'),
+    },
+  },
+})
 
 const server = new ApolloServer({
   typeDefs,
