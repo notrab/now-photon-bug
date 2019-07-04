@@ -29,7 +29,7 @@ const resolvers = {
 const photon = new Photon({
   __internal: {
     engine: {
-      cwd: path.join(__dirname, '../prisma/'),
+      cwd: path.join(__dirname, '../api/prisma/'),
     },
   },
 })
